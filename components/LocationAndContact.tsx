@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { COMPANY_ADDRESS, EMAIL_ADDRESS, WHATSAPP_NUMBER } from '../constants';
 
@@ -6,7 +5,12 @@ const LocationAndContact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Visit or Contact Us</h2>
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 inline-block relative">
+                Visit or Contact Us
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-blue-600 rounded-full"></span>
+            </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           
           <div className="bg-gray-50 p-8 rounded-xl shadow-lg">

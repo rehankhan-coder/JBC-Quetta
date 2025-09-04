@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { BrickType } from '../types';
 import { BRICK_PRICES, WHATSAPP_NUMBER } from '../constants';
@@ -54,8 +53,13 @@ const OrderForm: React.FC = () => {
   return (
     <section id="order" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-3xl">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Place Your Order</h2>
-        <p className="text-center text-gray-500 mb-10">Fill out the form below and we'll get back to you via WhatsApp.</p>
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-gray-800 inline-block relative">
+                Place Your Order
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-blue-600 rounded-full"></span>
+            </h2>
+            <p className="text-center text-gray-500 mt-4">Fill out the form below and we'll get back to you via WhatsApp.</p>
+        </div>
         
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

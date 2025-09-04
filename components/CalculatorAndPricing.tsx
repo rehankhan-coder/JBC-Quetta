@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { BrickType } from '../types';
 import { BRICK_PRICES } from '../constants';
@@ -29,7 +28,12 @@ const CalculatorAndPricing: React.FC = () => {
           
           {/* Calculator */}
           <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Brick Price Calculator</h2>
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-extrabold text-gray-800 inline-block relative">
+                Brick Price Calculator
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-blue-600 rounded-full"></span>
+              </h2>
+            </div>
             <div className="space-y-6">
               <div>
                 <label className="font-semibold text-gray-700 mb-2 block">Brick Type</label>
@@ -65,7 +69,12 @@ const CalculatorAndPricing: React.FC = () => {
 
           {/* Pricing Table */}
           <div className="mt-8 lg:mt-0">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Pricing Table</h2>
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-extrabold text-gray-800 inline-block relative">
+                Pricing Table
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-blue-600 rounded-full"></span>
+              </h2>
+            </div>
             <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
               <table className="w-full text-left">
                 <thead className="bg-gray-100">
